@@ -8,8 +8,12 @@ Rotational axis of MPU-6050 is shown below:
 ### Acceleration accelerometer
 The accelerator on the MPU-6050 chip is MEMS (Micro Electro Mechanical Systems) accelerometer which measures *linear* acceleration.
 
+Note: acceleration is measured as a force. MPU-6050 yields a CONSTANT accleration for the z-axis of ~9.8 m/s^2 when the board is flat. This is expected and is due to the force of gravity.
+
 ### Rotation gyroscope
 A MEMS gyroscope is used to measure angular rotation by employing The Coriolis Effect. 
+
+Units of measure for gyroscope is a **velocity** measured in radians per second (rad/s). 
 
 
 ## Ideas to investigate
