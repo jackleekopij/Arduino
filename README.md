@@ -3,8 +3,8 @@
 ## MPU-6050
 Arduino accelerometer instantiation.
 
-## ModBus protocol
-Add work on ModBus study with Arduino.
+## ModBus protocol  (RS-485)
+RS-485 is standard communication protocol used to transfer binary data from device to another. As there is no clock signal transmitted along with data, it's known as an asynchronus serial communication protocol. 32 devices can be supported on single RS-485 node in s single master, multiple slave architecture.
 
 See reference below:
 https://arduinogetstarted.com/tutorials/arduino-modbus
