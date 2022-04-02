@@ -6,3 +6,8 @@
 Serial Communication is a way for data transfer, transmitting over one wire, one bit, at a time. Pins 0 and 1 on the Arduino are dedicated to serial receiver input and transmission output, respectively. Arduino use the Transistor-Transistor Logic (TTL) protocol for receiver/transmission. TTL signals operate between 0volts - 3.3volts making it perfect for the Arduino. 
 
 To interface microcontrollers with RS-485 (ModBus protocol) the project uses MAX485 (TTL to RS-485) modules.
+
+
+## Transmit-Receiver test
+**Goal: test Arduino capability to communicate with RS-485 signal via RS-485 to TTL conversion. Necessary, for  Arduino to act as microcontroller for ModBus project.*
+Files transmitter_modbus_experiment.ino & receiver_modbus_experiment.ino are a test in Arduino-Arduino communication over RS-485. Given two Arduinos, upload transmitter_modbus_experiment.ino to transmission Arduino and receiver_modbus_experiment.ino to the other. A serial monitor can be opened on receiver Arduino to view incoming communication from transmitter Arduino.
