@@ -1,5 +1,8 @@
 # ModBus Project
 
+## ModBus PC simulator 
+https://libmodbus.org/ will be used as the software for computer interface to ModBus system (acting as DCS). Can be run on Raspberry Pi and Mac.
+
 ## Arduino basics
 
 ### Communication protocols
