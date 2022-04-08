@@ -3,6 +3,10 @@
 ## ModBus PC simulator 
 https://libmodbus.org/ will be used as the software for computer interface to ModBus system (acting as DCS). Can be run on Raspberry Pi and Mac.
 
+### Waveshare USB to ModBus module
+The Waveshare USB to ModBus module is a two pin RS485 module. Note: the 3rd pin is a ground pin is not needed for communication. Further channel A will link to channel A and channel B to channel B.
+https://www.waveshare.com/wiki/USB_TO_RS485
+
 ## Arduino basics
 
 ### Communication protocols
