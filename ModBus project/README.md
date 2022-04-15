@@ -6,6 +6,7 @@ https://libmodbus.org/ will be used as the software for computer interface to Mo
 ## Questions to answer;
 How to the following set point flow working: 
     1. [ ] Python or C program on laptop
+        - Could help background for writing to serial port https://stackoverflow.com/questions/4715340/python-twisted-receive-command-from-tcp-write-to-serial-device-return-response
     2. [ ] Write from Python or C program to WaveShare USB to RS485
     3. [ ] Send set point to to MAXX485 
     4. [x] MAXX485 conver RS485 back to TTL and send to Arduino 
