@@ -3,6 +3,17 @@
 ## ModBus PC simulator 
 https://libmodbus.org/ will be used as the software for computer interface to ModBus system (acting as DCS). Can be run on Raspberry Pi and Mac.
 
+## Questions to answer;
+How to the following set point flow working: 
+    1. [ ] Python or C program on laptop
+    2. [ ] Write from Python or C program to WaveShare USB to RS485
+    3. [ ] Send set point to to MAXX485 
+    4. [x] MAXX485 conver RS485 back to TTL and send to Arduino 
+    5. [x] Arduino consumes set point
+
+## ModBus terminology
+
+
 ### Waveshare USB to ModBus module
 The Waveshare USB to ModBus module is a two pin RS485 module. Note: the 3rd pin is a ground pin is not needed for communication. Further channel A will link to channel A and channel B to channel B.
 https://www.waveshare.com/wiki/USB_TO_RS485
