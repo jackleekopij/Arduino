@@ -22,7 +22,8 @@ Minimal Modbus is a lightweight solution for communication with instruments use 
 ## ModBus terminology
 
 
-### Waveshare USB to ModBus module
+### Waveshare USB to ModBus (WSUM) module
+This is an industrial USB to RS485 converter with original FT232RL inside. Few tutorials are available online for the WSUM, however, there seems to be relatively more documentation on FT232R chip the WSUM uses.
 
 ### Setup
 The Waveshare USB to ModBus module is a two pin RS485 module. Note: the 3rd pin is a ground pin is not needed for communication. Further channel A will link to channel A and channel B to channel B.
@@ -34,6 +35,14 @@ For MAC:
 3. Double click file to and accepted "Grant Permissions" 
 4. Plug in WaveShare USB USB to RS485, navigate to Applications -> Utilities -> System Information -> 'USB' left hand panel
 5. 'FT232R USB UART' will be listed if drivers are correctly installed. 
+
+### Experiments:
+Accessing WSUM from a software program such as *Minimal ModBus* or *PyModBus*. 
+- How will Python program know the location of the WSUM? Is there a 'hello world' test to show a connection has been made? 
+- Can commands simply be sent to to WSUM over serial and WSUM converts to RS485? 
+
+Instead of trying direct access to WSUM via ModBus master program can a *test* approach achieve succesful connetion with the WSUM? 
+
 
 ## Arduino basics
 
