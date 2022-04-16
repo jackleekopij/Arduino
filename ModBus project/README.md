@@ -12,12 +12,28 @@ How to the following set point flow working:
     4. [x] MAXX485 conver RS485 back to TTL and send to Arduino 
     5. [x] Arduino consumes set point
 
+## Notes: 
+Looking for appropriate software to enable laptop to output RS485. 
+
+*Minimal Modbus*
+Minimal Modbus is a lightweight solution for communication with instruments use ModBus RTU. It's an easy-to-use Python module for talking to instruments (slaves) from a computer (master) using the Modbus protocol, and is intended to be running on the master. The only dependence is the pySerial module (also pure Python). 
+*Minimal ModBus* recommends more robust and feature reach [programs](https://minimalmodbus.readthedocs.io/en/stable/related.html) for advanced use case.
+
 ## ModBus terminology
 
 
 ### Waveshare USB to ModBus module
+
+### Setup
 The Waveshare USB to ModBus module is a two pin RS485 module. Note: the 3rd pin is a ground pin is not needed for communication. Further channel A will link to channel A and channel B to channel B.
-https://www.waveshare.com/wiki/USB_TO_RS485
+
+### Installation
+For MAC:
+1. Download drivers from [FTDI website](https://ftdichip.com/drivers/vcp-drivers/)
+2. Extract zip into 'Applications' folder
+3. Double click file to and accepted "Grant Permissions" 
+4. Plug in WaveShare USB USB to RS485, navigate to Applications -> Utilities -> System Information -> 'USB' left hand panel
+5. 'FT232R USB UART' will be listed if drivers are correctly installed. 
 
 ## Arduino basics
 
