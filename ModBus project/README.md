@@ -19,6 +19,19 @@ Looking for appropriate software to enable laptop to output RS485.
 Minimal Modbus is a lightweight solution for communication with instruments use ModBus RTU. It's an easy-to-use Python module for talking to instruments (slaves) from a computer (master) using the Modbus protocol, and is intended to be running on the master. The only dependence is the pySerial module (also pure Python). 
 *Minimal ModBus* recommends more robust and feature reach [programs](https://minimalmodbus.readthedocs.io/en/stable/related.html) for advanced use case.
 
+
+*PyUSB*
+PyUSB provides an interface to access USB port on computer; PyUSB has depedencies on libusb which doesn't come installed. Installing  libusb for MAC currentl fails for `brew` via `brew install libusb`. Instead install from tar ball by downloading [here](https://libusb.info/) and there following general MAC install instructions: 
+`
+tar xvjf libusb.tar.bz2
+Navigate to the extracted folder using cd command
+cd libusb
+Now run the following command to install the tarball
+./configure
+make
+sudo make install
+`
+
 ## ModBus terminology
 
 
