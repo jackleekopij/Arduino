@@ -12,6 +12,21 @@ How to the following set point flow working:
     4. [x] MAXX485 conver RS485 back to TTL and send to Arduino 
     5. [x] Arduino consumes set point
 
+What is ModBus RTU? 
+
+What is serial communication? 
+In data communication, serial is the process of sending data one bit at a time, sequentially, over a communication channel or computer bus. There are numerous architectures which implement serial communication including Ethernet,FireWire, RS232 and RS-485.
+
+What actually is RS-485 (is it hardware, communication protocol, etc.)? 
+- 
+
+What is the difference between TTL and RS485?
+*Electrical characteristics of the interface*
+- *RS-485* also has a differential negative logic relationship; logic "1" is voltage between -2V to -6V, logic "0" is 2V to 6V.
+- *TTL* has positive logic relation; logic "1" is +5V, logic "0" is 0V. 
+
+*TTL* uses a 'single ended' (only one cable) where pulses of electricity are sent encoding a digital true false. Where as ModBus uses the differential between channels A and B to encode information, differential signalling. An RS-485 networking signal can be used for distances of hundreds of meters, while a TTL signal is usually good for a few centimeters.
+
 ## Notes: 
 Looking for appropriate software to enable laptop to output RS485. 
 
