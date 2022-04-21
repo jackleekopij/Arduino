@@ -12,7 +12,10 @@ How to the following set point flow working:
     4. [x] MAXX485 conver RS485 back to TTL and send to Arduino 
     5. [x] Arduino consumes set point
 
-What is ModBus RTU? 
+What is ModBus RTU (remote terminal unit)? 
+ModBus is not part of the physical layer (application layer only), and therefore can be utilized across many different types of networks. As ModBus is application level only it's termed application level SCADA protocol. 
+
+There are *two variants of ModBus protocol;* **ModBus RTU** and **ModBus ASCII**; the former is compact, uses binary communication and and uses cyclic redundancy check checksum. **ModBus ASCII** on the other hand uses characters that can be read by humans (not binary) and uses the less secure longitudinal redundancy check checksum. ModBus RTU should always be used over ModBus ASCII where possible. 
 
 What is serial communication? 
 In data communication, serial is the process of sending data one bit at a time, sequentially, over a communication channel or computer bus. There are numerous architectures which implement serial communication including Ethernet,FireWire, RS232 and RS-485.
@@ -67,6 +70,11 @@ For MAC:
 ### Experiments:
 Accessing WSUM from a software program such as *Minimal ModBus* or *PyModBus*. 
 - How will Python program know the location of the WSUM? Is there a 'hello world' test to show a connection has been made? 
+    - Starting by finding the port number given WSUM has been setup correctly. MAC commands for this `ls /dev/tty*`
+    - Then use *pymodbus* to see if I can successfully connect to device. 
+    - Most likely need to understand modbus coils.
+    - If no error messages, then will try and write from Adruino to WSUM.
+
 - Can commands simply be sent to to WSUM over serial and WSUM converts to RS485? 
 
 Instead of trying direct access to WSUM via ModBus master program can a *test* approach achieve succesful connetion with the WSUM? 
