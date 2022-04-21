@@ -71,7 +71,7 @@ For MAC:
 Accessing WSUM from a software program such as *Minimal ModBus* or *PyModBus*. 
 - How will Python program know the location of the WSUM? Is there a 'hello world' test to show a connection has been made? 
     - Starting by finding the port number given WSUM has been setup correctly. MAC commands for this `ls /dev/tty*`
-    - Then use *pymodbus* to see if I can successfully connect to device. 
+    - Then use *pymodbus* to see if I can successfully connect to device. \[Success; well atleast when I ran the code with WSUM plugged in no error was thrown, when WSUM was removed error was thrown!!!\]
     - Most likely need to understand modbus coils.
     - If no error messages, then will try and write from Adruino to WSUM.
 
