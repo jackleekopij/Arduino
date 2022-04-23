@@ -56,6 +56,9 @@ sudo make install
 ### Waveshare USB to ModBus (WSUM) module
 This is an industrial USB to RS485 converter with original FT232RL inside. Few tutorials are available online for the WSUM, however, there seems to be relatively more documentation on FT232R chip the WSUM uses.
 
+Follow up on this tutorial:
+https://medium.com/@peterfitch/modbus-and-rs485-a-python-test-rig-1b5014f709ec
+
 ### Setup
 The Waveshare USB to ModBus module is a two pin RS485 module. Note: the 3rd pin is a ground pin is not needed for communication. Further channel A will link to channel A and channel B to channel B.
 
