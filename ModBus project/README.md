@@ -1,8 +1,10 @@
 # ModBus Project
 
+
+
 ## Code: 
-- *receive_serial_hello_world.ino* : code for minimum example of Arduino reading serial using MAXX-485 chips.
-- *transmit_serial_hello_world.ino* : code for minimum example of Arduino transmitting serial using MAXX-485 chips.
+- *receive_serial_hello_world.ino* : code for minimum example of Arduino reading serial using MAXX-485 chips (hello_world_trans_receive_serial.png).
+- *transmit_serial_hello_world.ino* : code for minimum example of Arduino transmitting serial using MAXX-485 chips(hello_world_trans_receive_serial.png).
 
 
 ## ModBus PC simulator 
