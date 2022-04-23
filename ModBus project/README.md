@@ -1,5 +1,10 @@
 # ModBus Project
 
+## Code: 
+- *receive_serial_hello_world.ino* : code for minimum example of Arduino reading serial using MAXX-485 chips.
+- *transmit_serial_hello_world.ino* : code for minimum example of Arduino transmitting serial using MAXX-485 chips.
+
+
 ## ModBus PC simulator 
 https://libmodbus.org/ will be used as the software for computer interface to ModBus system (acting as DCS). Can be run on Raspberry Pi and Mac.
 
