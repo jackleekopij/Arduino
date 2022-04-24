@@ -28,6 +28,8 @@ What is serial communication?
 In data communication, serial is the process of sending data one bit at a time, sequentially, over a communication channel or computer bus. There are numerous architectures which implement serial communication including Ethernet,FireWire, RS232 and RS-485.
 
 What actually is RS-485 (is it hardware, communication protocol, etc.)? 
+The ModBus protocol/architecture is best understood with the following diagram:
+![](../images/ModBus_architecture.png)
 - 
 
 What is the difference between TTL and RS485?
@@ -82,10 +84,21 @@ Accessing WSUM from a software program such as *Minimal ModBus* or *PyModBus*.
 - How will Python program know the location of the WSUM? Is there a 'hello world' test to show a connection has been made? 
     - Starting by finding the port number given WSUM has been setup correctly. MAC commands for this `ls /dev/tty*`
     - Then use *pymodbus* to see if I can successfully connect to device. \[Success; well atleast when I ran the code with WSUM plugged in no error was thrown, when WSUM was removed error was thrown!!!\]
-    - Most likely need to understand modbus coils.
+    - Most likely need to understand modbus coils
+        - --> **coils** seem to have relation to **register**.
     - If no error messages, then will try and write from Adruino to WSUM.
 
-- Can commands simply be sent to to WSUM over serial and WSUM converts to RS485? 
+- Can commands simply be sent to to WSUM over serial and WSUM converts to RS485?
+    - Tried this using the *minimal_modbus_example.py* where Arduino/MAX485 chip is sending serial to the WSUM. NOTE: checked TTL to RS-485 and conversion back using the '../images/hello_world_trans_receive_serial.png' architecture. Response was as expected. 
+        - ** NEXT STEPS**: 
+            - Attempt to write to register and have Arduino/MAX485 read the response instead? 
+        - **RESULTS**:
+            - Executing the *minimal_modbus_example.py* lights up the 'RXD light on WUSM' ONLY when Arduino is powered on. RXD light flashes on/off for ~10 seconds and then stops. 
+            - When Arduino has no power i.e. not writing serial error *minimalmodbus.NoResponseError: No communication with the instrument (no answer)* is thrown WHERE AS ARDUINO I.E. SERIAL WRITE ON throws error *minimalmodbus.InvalidResponseError: Checksum error in rtu mode: '\x8bÑ' instead of 'hÍ' . The response is: '\x85±ue\x90\x97W\x8bÑ' (plain response: '\x85±ue\x90\x97W\x8bÑ')*.
+
+        - **CONCLUSIONS**:
+            - WSUM is conneted and able to interface with through Python on correct ports (may need to try using different verisions of WSUM). Arduino/MAX485 is causing impact on WSUM however passing through incorrect data.
+    - DOUBLE CHECK HELLOW WORLD ARCHITECTURE
 
 Instead of trying direct access to WSUM via ModBus master program can a *test* approach achieve succesful connetion with the WSUM? 
 
