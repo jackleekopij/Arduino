@@ -1,6 +1,6 @@
 from pymodbus.client.sync import ModbusSerialClient
 
-wsum = ModbusSerialClient(method='rtu',port='/dev/tty.usbserial-5',baudrate=9600,parity='O')
+wsum = ModbusSerialClient(method='rtu',port='/dev/tty.usbserial-AQ00QSV7',baudrate=9600,parity='O')
 
 wsum.connect()
 test = wsum.read_holding_registers(0, 1, unit=1)
