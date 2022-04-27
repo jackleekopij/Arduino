@@ -2,7 +2,7 @@
 
 ## Minimum working Modbus example:
 A minimum working example of communicating via ModBus between master (PC/MAC) and slave (Arduino) with the following architecture: 
-![](../images/Modbus_hello_world_config.png|width=200)
+![](../images/Modbus_hello_world_config.png =200x200)
 The minimum working ModBus example uses following: 
 - Hardware: 
     1. Arduino Uno
