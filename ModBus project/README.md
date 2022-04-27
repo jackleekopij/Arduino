@@ -6,6 +6,11 @@
 - *receive_serial_hello_world.ino* : code for minimum example of Arduino reading serial using MAXX-485 chips (hello_world_trans_receive_serial.png).
 - *transmit_serial_hello_world.ino* : code for minimum example of Arduino transmitting serial using MAXX-485 chips(hello_world_trans_receive_serial.png).
 
+- Bash command to get serial devices: 
+```{bash}
+ls /dev | grep usbserial
+```
+
 
 ## ModBus PC simulator 
 https://libmodbus.org/ will be used as the software for computer interface to ModBus system (acting as DCS). Can be run on Raspberry Pi and Mac.
@@ -30,7 +35,10 @@ In data communication, serial is the process of sending data one bit at a time, 
 What actually is RS-485 (is it hardware, communication protocol, etc.)? 
 The ModBus protocol/architecture is best understood with the following diagram:
 ![](../images/ModBus_architecture.png)
-- 
+
+What is the difference between ModBus and RS-485? 
+ModBus software protocol whereas RS-485 is hardware protocol. 
+
 
 What is the difference between TTL and RS485?
 *Electrical characteristics of the interface*
