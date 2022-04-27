@@ -1,5 +1,19 @@
 # ModBus Project
 
+## Minimum working Modbus example:
+A minimum working example of communicating via ModBus between master (PC/MAC) and slave (Arduino) with the following architecture: 
+![](../images/Modbus_hello_world_config.png)
+The minimum working ModBus example uses following: 
+- Hardware: 
+    1. Arduino Uno
+    2. MAX485 chip
+    3. USB-to-RS-485
+- Software:
+    1. Slave (Arduino): [ModBus RTU](https://github.com/smarmengol/Modbus-Master-Slave-for-Arduino)
+        - Example code: modbus_hello_world_slave_arduino.ino
+    2. Master (PC/MAC): [MinimalModBus](https://github.com/pyhys/minimalmodbus)
+        - Example code: modbus_hello_world_master_mac.py
+
 
 
 ## Code: 
