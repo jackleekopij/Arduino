@@ -2,7 +2,7 @@
 
 ## Minimum working Modbus example:
 A minimum working example of communicating via ModBus between master (PC/MAC) and slave (Arduino) with the following architecture: 
-![](../images/Modbus_hello_world_config.png)
+![](../images/Modbus_hello_world_config.png|width=200)
 The minimum working ModBus example uses following: 
 - Hardware: 
     1. Arduino Uno
@@ -61,6 +61,9 @@ What is the difference between TTL and RS485?
 
 *TTL* uses a 'single ended' (only one cable) where pulses of electricity are sent encoding a digital true false. Where as ModBus uses the differential between channels A and B to encode information, differential signalling. An RS-485 networking signal can be used for distances of hundreds of meters, while a TTL signal is usually good for a few centimeters.
 
+What is the OSI model? 
+![](../images/osi_model.png|width=150)
+
 ## Notes: 
 Looking for appropriate software to enable laptop to output RS485. 
 
@@ -71,7 +74,7 @@ Minimal Modbus is a lightweight solution for communication with instruments use 
 
 *PyUSB*
 PyUSB provides an interface to access USB port on computer; PyUSB has depedencies on libusb which doesn't come installed. Installing  libusb for MAC currentl fails for `brew` via `brew install libusb`. Instead install from tar ball by downloading [here](https://libusb.info/) and there following general MAC install instructions: 
-`
+```{bash}
 tar xvjf libusb.tar.bz2
 Navigate to the extracted folder using cd command
 cd libusb
@@ -79,9 +82,13 @@ Now run the following command to install the tarball
 ./configure
 make
 sudo make install
-`
+```
 
 ## ModBus terminology
+
+- Channel/device ID: integer between 0-247 identifying device on ModBus network. 
+- Register: 
+- Coil:
 
 
 ### Waveshare USB to ModBus (WSUM) module
