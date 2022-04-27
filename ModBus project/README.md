@@ -2,7 +2,7 @@
 
 ## Minimum working Modbus example:
 A minimum working example of communicating via ModBus between master (PC/MAC) and slave (Arduino) with the following architecture: 
-![](../images/Modbus_hello_world_config.png =200x200)
+![](../images/Modbus_hello_world_config.png)
 The minimum working ModBus example uses following: 
 - Hardware: 
     1. Arduino Uno
@@ -62,7 +62,7 @@ What is the difference between TTL and RS485?
 *TTL* uses a 'single ended' (only one cable) where pulses of electricity are sent encoding a digital true false. Where as ModBus uses the differential between channels A and B to encode information, differential signalling. An RS-485 networking signal can be used for distances of hundreds of meters, while a TTL signal is usually good for a few centimeters.
 
 What is the OSI model? 
-![](../images/osi_model.png | width=150)
+![](../images/osi_model.png)
 
 ## Notes: 
 Looking for appropriate software to enable laptop to output RS485. 
