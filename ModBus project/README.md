@@ -62,7 +62,7 @@ What is the difference between TTL and RS485?
 *TTL* uses a 'single ended' (only one cable) where pulses of electricity are sent encoding a digital true false. Where as ModBus uses the differential between channels A and B to encode information, differential signalling. An RS-485 networking signal can be used for distances of hundreds of meters, while a TTL signal is usually good for a few centimeters.
 
 What is the OSI model? 
-![](../images/osi_model.png|width=150)
+![](../images/osi_model.png | width=150)
 
 ## Notes: 
 Looking for appropriate software to enable laptop to output RS485. 
