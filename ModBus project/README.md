@@ -25,6 +25,47 @@ The minimum working ModBus example uses following:
 ls /dev | grep usbserial
 ```
 
+## ModBus Overview 
+https://www.youtube.com/watch?v=xjgznfsHpzk
+
+There are 3 types of ModBus variations, each variation are incompatible: 
+1. ASCII (serial)
+2. RTU (serial)
+3. TCP/IP (serial)
+
+### Serial vs TCP/IP
+Serial uses master/slave whereas TCP/IP uses client server. 
+Serial connections must be connected in daisy chain pattern. 
+
+Big difference betweent serial and TCP/IP
+Serial has message of form: 
+    1. Slave id
+    2. Function code
+    3. Data
+    4. CRC
+
+TCP has message of form: 
+    1. MBAP (ModBus Application Header) header -> contains info to route message to device
+    2. Function code
+    3. Data
+
+SERIAL (RTU)
+Typically uses one of 3 *electrical interfaces* RS232, RS422 or RS485, however, 
+
+The Baud rate (measure in bits per second) is the speed at which messages are sent; all devices on an RTU network with typical speeds between 9600-19200 however network is capable of communicating between 300 - 100000+
+
+TCP/IP 
+Client connects to switch which is connected to all the servers on network. 
+Requires IP address and sub-net mask. 
+
+### Adressing system
+Discrete values = coils
+16 bit values = registers
+
+Coil - read/write --> 00001 - 09999
+Discrete inputs - read only --> 10001 - 19999
+Input registers - read only --> 30001 - 39999
+Holding registers - read/write  --> 40001 - 49999
 
 ## ModBus PC simulator 
 https://libmodbus.org/ will be used as the software for computer interface to ModBus system (acting as DCS). Can be run on Raspberry Pi and Mac.
