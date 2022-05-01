@@ -106,6 +106,9 @@ What is the OSI model?
 ![](../images/osi_model.png)
 
 ## Notes: 
+Setup for Arduino water pump can be found here: 
+![](../images/12v_pump_arduino.png)
+
 Looking for appropriate software to enable laptop to output RS485. 
 
 *Minimal Modbus*
