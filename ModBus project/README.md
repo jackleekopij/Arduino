@@ -93,7 +93,7 @@ The ModBus protocol/architecture is best understood with the following diagram:
 
 What is the difference between ModBus and RS-485? 
 ModBus software protocol whereas RS-485 is hardware protocol. 
-
+https://www.equustek.com/modbus-rs485-everything-need-know/
 
 What is the difference between TTL and RS485?
 *Electrical characteristics of the interface*
