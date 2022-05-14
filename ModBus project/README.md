@@ -10,13 +10,13 @@ The minimum working ModBus example uses following:
     3. USB-to-RS-485
 - Software:
     0. Pre-requisite: 
-        FTDI drivers are required - [instructions here](#ftdi-install)
+        FTDI drivers are required - [instructions here](#FTDI-driver-installation)
     1. Slave (Arduino): [ModBus RTU](https://github.com/smarmengol/Modbus-Master-Slave-for-Arduino)
         - Example code: modbus_hello_world_slave_arduino.ino
     2. Master (PC/MAC): [MinimalModBus](https://github.com/pyhys/minimalmodbus)
         - Example code: modbus_hello_world_master_mac.py
 
-#### [FTDI driver installation][ftdi-install]
+#### FTDI driver installation
 For MAC:
 1. Download drivers from [FTDI website](https://ftdichip.com/drivers/vcp-drivers/)
 2. Extract zip into 'Applications' folder
