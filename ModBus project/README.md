@@ -9,12 +9,20 @@ The minimum working ModBus example uses following:
     2. MAX485 chip
     3. USB-to-RS-485
 - Software:
+    0. Pre-requisite: 
+        FTDI drivers are required - [instructions here](#ftdi-install)
     1. Slave (Arduino): [ModBus RTU](https://github.com/smarmengol/Modbus-Master-Slave-for-Arduino)
         - Example code: modbus_hello_world_slave_arduino.ino
     2. Master (PC/MAC): [MinimalModBus](https://github.com/pyhys/minimalmodbus)
         - Example code: modbus_hello_world_master_mac.py
 
-
+#### [FTDI driver installation][ftdi-install]
+For MAC:
+1. Download drivers from [FTDI website](https://ftdichip.com/drivers/vcp-drivers/)
+2. Extract zip into 'Applications' folder
+3. Double click file to and accepted "Grant Permissions" 
+4. Plug in WaveShare USB USB to RS485, navigate to Applications -> Utilities -> System Information -> 'USB' left hand panel
+5. 'FT232R USB UART' will be listed if drivers are correctly installed. 
 
 ## Code: 
 - *receive_serial_hello_world.ino* : code for minimum example of Arduino reading serial using MAXX-485 chips (hello_world_trans_receive_serial.png).
@@ -144,13 +152,7 @@ https://medium.com/@peterfitch/modbus-and-rs485-a-python-test-rig-1b5014f709ec
 ### Setup
 The Waveshare USB to ModBus module is a two pin RS485 module. Note: the 3rd pin is a ground pin is not needed for communication. Further channel A will link to channel A and channel B to channel B.
 
-### Installation
-For MAC:
-1. Download drivers from [FTDI website](https://ftdichip.com/drivers/vcp-drivers/)
-2. Extract zip into 'Applications' folder
-3. Double click file to and accepted "Grant Permissions" 
-4. Plug in WaveShare USB USB to RS485, navigate to Applications -> Utilities -> System Information -> 'USB' left hand panel
-5. 'FT232R USB UART' will be listed if drivers are correctly installed. 
+
 
 ### Experiments:
 Accessing WSUM from a software program such as *Minimal ModBus* or *PyModBus*. 
