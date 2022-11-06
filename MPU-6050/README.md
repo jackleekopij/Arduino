@@ -9,6 +9,8 @@ Rotational axis of MPU-6050 is shown below:
 Below is a wiring diagram for a minimum working example for MPU6050:
 ![mpu_6050_wiring](../images/MPU6050_hello_world.png)
 
+[Code](MPU_test_27082022.ino) for running minimum working example; can be monitored through serial baud 9600.
+
 
 ### Acceleration accelerometer
 The accelerator on the MPU-6050 chip is MEMS (Micro Electro Mechanical Systems) accelerometer which measures *linear* acceleration.
