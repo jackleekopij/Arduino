@@ -5,6 +5,11 @@ The MPU-6050 chip measures three functions; acceleration, rotation and temperatu
 Rotational axis of MPU-6050 is shown below: 
 ![mpu_6050_rotation](../images/mpu_rotation.png)
 
+### Minimum working example
+Below is a wiring diagram for a minimum working example for MPU6050:
+![mpu_6050_wiring](../images/MPU6050_hello_world.png)
+
+
 ### Acceleration accelerometer
 The accelerator on the MPU-6050 chip is MEMS (Micro Electro Mechanical Systems) accelerometer which measures *linear* acceleration.
 
