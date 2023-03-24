@@ -15,3 +15,6 @@ https://arduinogetstarted.com/tutorials/arduino-modbus
 
 ModBus-Arduino servo control tutorial:
 https://www.hackster.io/maurizfa-13216008-arthur-jogy-13216037-agha-maretha-13216095/modbus-rs-485-using-arduino-c055b5
+
+STM32 tutorial:
+https://wiki.st.com/stm32mcu/wiki/STM32StepByStep:Step2_Blink_LED
